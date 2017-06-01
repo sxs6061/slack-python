@@ -1,3 +1,11 @@
+# size 3
+#
+# ----c----
+# --c-b-c--
+# c-b-a-b-c
+# --c-b-c--
+# ----c----
+
 import string
 alpha = string.ascii_lowercase
 
