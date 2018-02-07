@@ -4,12 +4,14 @@ from scp import SCPClient
 from argparse import ArgumentParser
 import paramiko
 
-def connect_server(hostname, filename):
+_port = 22
+
+def connect_server(hostname, username, password, filename):
     try:
         ssh = paramiko.SSHClient()
         ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
         ssh.load_system_host_keys()
-        ssh.connect(hostname)
+        ssh.connect(hostname, port=_port, username=username, password=password)
 
         print ('Creating a paramiko transport for SCP...')
 
@@ -27,13 +29,17 @@ def connect_server(hostname, filename):
 def addparser(argv=None):
     parser = ArgumentParser(description='Transfer file using paramiko')
     parser.add_argument('-host', '--hostname', help = 'Enter the hostname', required = True)
-    parser.add_argument('-file', '--filename', help = 'Enter the full path file to be transfered', required = True)
+    parser.add_argument('-u', '--username', help = 'Enter the username for the host', required = True)
+    parser.add_argument('-p', '--password', help = 'Enter the password for the host', required = True)
+    parser.add_argument('-f', '--filename', help = 'Enter the full path file to be transfered', required = True)
     return parser.parse_args()
 
 
 if __name__ == "__main__":
     args = addparser()
     hostname = args.hostname
+    username = args.username
+    password = args.password
     filename = args.filename
 
-    connect_server(hostname, filename)
+    connect_server(hostname, username, password, filename)
