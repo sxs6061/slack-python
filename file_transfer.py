@@ -31,7 +31,7 @@ def addparser(argv=None):
     parser.add_argument('-host', '--hostname', help = 'Enter the hostname', required = True)
     parser.add_argument('-u', '--username', help = 'Enter the username for the host', required = True)
     parser.add_argument('-p', '--password', help = 'Enter the password for the host', required = True)
-    parser.add_argument('-f', '--filename', help = 'Enter the full path file to be transfered', required = True)
+    parser.add_argument('-f', '--filename', help = 'Enter the full path of file to be transfered', required = True)
     return parser.parse_args()
 
 
