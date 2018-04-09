@@ -11,7 +11,7 @@ from email.utils import parseaddr
 import re
 
 
-pattern = "^[a-zA-Z][\w\-\.]*@[A-Za-z]+\.[a-zA-Z]{1,3}$"
+pattern = r"^[a-zA-Z][\w\-\.]*@[A-Za-z]+\.[a-zA-Z]{1,3}$"
 
 # Enter number followed by name and email (name <user@email.com>)
 data = [ raw_input() for count in range(int(raw_input())) ]
