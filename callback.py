@@ -1,5 +1,5 @@
 def func_a(numbers, callback):
-    
+
     # conventional method with callback
     # results = []
     # for i in numbers:
