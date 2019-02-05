@@ -1,5 +1,5 @@
-# Given a number of bits n, generate a possible gray codefor it.
-# Eg. for n = 2, once gray code would be  [00, 01, 10, 11]
+# Given a number of n, generate a possible gray code for it.
+# Eg. for n = 2, one gray code would be [00, 01, 10, 11]
 
 # Using list comprehension:
 def gray_code(n):
