@@ -1,4 +1,4 @@
-# Given a number of buts n, generate a possible gray codefor it.
+# Given a number of bits n, generate a possible gray codefor it.
 # Eg. for n = 2, once gray code would be  [00, 01, 10, 11]
 
 # Using list comprehension:
