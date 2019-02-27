@@ -9,6 +9,6 @@
 
 # The order of the indices does not matter.
 
-s = "barfoobazbitbyte"
+s = "dogcatcatcodecatdog" # "barfoobazbitbyte"
 words = ["cat", "dog"]
 print [ s.find(i) for i in [''.join(words[::-1]), ''.join(words)] if i in s ]
