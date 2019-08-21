@@ -4,7 +4,7 @@
 #
 def is_isomorphic(s1, s2):
      if len(s1) != len(s2):
-          return false
+          return False
      return bool( len(dict(zip(s1, s2))) == len(dict(zip(s2, s1))) )
 
 s1 = "abc" # "foo"
