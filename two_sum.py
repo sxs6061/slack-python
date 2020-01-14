@@ -3,7 +3,6 @@
 # Given nums = [2, 7, 11, 15], target = 9, Because nums[0] + nums[1] = 2 + 7 = 9, return [0, 1].
 #
 #
-import itertools
 class Solution(object):
     def twoSum(self, nums, target):
         """
@@ -11,11 +10,11 @@ class Solution(object):
         :type target: int
         :rtype: List[int]
         """
-        res = []
-        for num in itertools.combinations(set(nums), 2):
-            if num[0] + num[1] == target:
-               res.extend([ nums.index(num[0]), nums.index(num[1]) ])
-        return sorted(res)
+        dic = {}
+        for i, num in enumerate(nums):
+            if target - num in dic:
+                return [dic[target-num], i]
+            dic[num] = i
 
 # Driver Code 
 if __name__ == '__main__':
