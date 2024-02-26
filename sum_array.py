@@ -12,4 +12,4 @@ A = [2, 4, 6, 8, 10]
 x = 8 # True condition
 #x = 3 # False condition
 res = sum_array(A, x)
-print "exists" if res else "Doesnt exist"
+print("exists" if res else "Doesnt exist")

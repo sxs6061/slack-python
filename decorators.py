@@ -9,6 +9,6 @@ def mobile(function):
 
 @mobile
 def sort_phone(number):
-	print (*sorted(number), sep='\n')
+	print(*sorted(number), sep='\n')
 
 sort_phone(number)

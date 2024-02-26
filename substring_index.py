@@ -11,4 +11,4 @@
 
 s = "dogcatcatcodecatdog" # "barfoobazbitbyte"
 words = ["cat", "dog"]
-print [ s.find(i) for i in [''.join(words[::-1]), ''.join(words)] if i in s ]
+print([ s.find(i) for i in [''.join(words[::-1]), ''.join(words)] if i in s ])

@@ -9,4 +9,4 @@ class Solution(object):
         return setBits
 
 if __name__ == '__main__':
-        print Solution().hammingDistance(1, 4)
+        print(Solution().hammingDistance(1, 4))

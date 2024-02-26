@@ -23,13 +23,13 @@ def in_order_print(root):
     if not root:
         return
     in_order_print(root.l_child)
-    print root.data
+    print(root.data)
     in_order_print(root.r_child)
 
 def pre_order_print(root):
     if not root:
         return        
-    print root.data
+    print(root.data)
     pre_order_print(root.l_child)
     pre_order_print(root.r_child)   
 
@@ -39,7 +39,7 @@ def mirror(root):
     mirror(root.l_child)
     mirror(root.r_child)
     root.l_child, root.r_child = root.r_child, root.l_child
-    print root.data
+    print(root.data)
 
 if __name__ == '__main__':
     r = Node(3)
@@ -47,11 +47,11 @@ if __name__ == '__main__':
     binary_insert(r, Node(1))
     binary_insert(r, Node(5))
 
-    print "in order:"
+    print("in order:")
     in_order_print(r)
 
-    print "pre order"
+    print("pre order")
     pre_order_print(r)
 
-    print "tree mirror"
+    print("tree mirror")
     mirror(r)

@@ -10,4 +10,4 @@
 
 houses = [5, 10, 17]
 stores = [1, 5, 20, 11, 16]
-print [min(stores, key=lambda x:abs(x-house)) for house in houses]
+print([min(stores, key=lambda x:abs(x-house)) for house in houses])

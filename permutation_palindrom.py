@@ -5,4 +5,4 @@
 import itertools
 
 data = "carrace"
-print bool(any({ bool(''.join(i)[::-1] == ''.join(i)) for i in itertools.permutations(data) }))
+print(bool(any({ bool(''.join(i)[::-1] == ''.join(i)) for i in itertools.permutations(data) })))

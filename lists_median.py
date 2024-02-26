@@ -17,4 +17,4 @@ nums1 = [1, 2]
 nums2 = [3, 4]
 
 [ bisect.insort(nums1, num) for num in nums2 ]
-print (sum(nums1[len(nums1)//2-1:len(nums1)//2+1])/2.0, nums1[len(nums1)//2])[len(nums1) % 2]
+print(sum(nums1[len(nums1)//2-1:len(nums1)//2+1])/2.0, nums1[len(nums1)//2])[len(nums1) % 2]

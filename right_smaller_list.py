@@ -8,4 +8,4 @@
 # There are no smaller elements to the right of 1
 #
 L = [3, 4, 9, 6, 1]
-print [ len([ x for x in L[i+1:] if x < v ]) for i, v in  enumerate(L) ]
+print([ len([ x for x in L[i+1:] if x < v ]) for i, v in  enumerate(L) ])

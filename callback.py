@@ -19,5 +19,5 @@ def func_b(number):
 def func_c(number):
      return number * 2
 
-print func_a([1,2,3,4], func_b) #=> [3, 4, 5, 6]
-print func_a([1,2,3,4], func_c) #=> [2, 4, 6, 8]
+print(func_a([1,2,3,4], func_b)) #=> [3, 4, 5, 6]
+print(func_a([1,2,3,4], func_c)) #=> [2, 4, 6, 8]

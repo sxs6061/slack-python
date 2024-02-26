@@ -6,4 +6,4 @@
 
 # A = [3, 2, 1]
 A = [1, 2, 3, 4, 5]
-print [ reduce((lambda x, y: x * y), A[:i]+A[i+1:]) for i in range(len(A)) ]
+print([ reduce((lambda x, y: x * y), A[:i]+A[i+1:]) for i in range(len(A)) ])

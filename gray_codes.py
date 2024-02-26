@@ -5,7 +5,7 @@
 def gray_code(n):
     return  ([ "{0:0{1}b}".format(i,n) for i in xrange(2**n) ])
 
-print " ".join(gray_code(2)),
+print(" ".join(gray_code(2)),)
 
 
 # Using Bitwise operarions:

@@ -19,4 +19,4 @@ def is_isomorphic(s, t):
 s = "aba" #abc
 t = "baa" #bcd
 
-print is_isomorphic(s, t)
+print(is_isomorphic(s, t))

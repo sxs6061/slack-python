@@ -21,4 +21,4 @@ if __name__ == '__main__':
     nums = [2, 7, 11, 15]
     target = 18
     res = Solution().twoSum(nums, target)
-    print res
+    print(res)

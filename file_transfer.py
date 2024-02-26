@@ -17,14 +17,14 @@ def connect_server(hostname, username, password, filename):
 
         # SCPCLient takes a paramiko transport and progress callback as its arguments.
         with SCPClient(ssh.get_transport()) as scp:
-            print 'Putting the file "{}" in the remote_host: {}'.format(filename, hostname)
+            print('Putting the file "{}" in the remote_host: {}'.format(filename, hostname))
             scp.put(filename, '~/remote_filename')
 
             # print 'Getting the file in the remote_host: %s', hostname
             # scp.get('~/remote_filename')
 
     except Exception as e :
-            print str(e)
+            print(str(e))
 
 def addparser(argv=None):
     parser = ArgumentParser(description='Transfer file using paramiko')
